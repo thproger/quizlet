@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f5f6fb; color: #292b37; font: 16px Arial, sans-serif; }
+.app { width: min(650px, 100%); margin: 36px auto; padding: 20px; }
+.brand { color: #4255ff; font-size: 22px; font-weight: 700; }
+.panel { margin-top: 20px; padding: 28px; border-radius: 20px; background: #fff; box-shadow: 0 8px 30px #20234a12; }
+h1, h2 { margin-top: 0; }
+label { display: block; margin: 14px 0 7px; font-weight: 600; }
+.muted, .score { color: #777b8c; }
+.field { width: 100%; padding: 14px; border: 1px solid #dfe1eb; border-radius: 10px; background: white; font-size: 16px; }
+button { padding: 14px 20px; border: 0; border-radius: 10px; color: #fff; font-weight: 700; cursor: pointer; }
+.primary { width: 100%; margin-top: 14px; background: #4255ff; }
+.secondary { background: #4255ff; }
+.finish { width: 100%; margin-top: 10px; background: #777b8c; }
+.primary:hover, .secondary:hover { background: #3042e8; }
+.topline { display: flex; justify-content: space-between; gap: 12px; }
+.track { height: 8px; margin: 18px 0; overflow: hidden; border-radius: 8px; background: #eceef5; }
+.track i { display: block; width: 0; height: 100%; background: #4255ff; transition: width .25s; }
+.flashcard { display: grid; min-height: 180px; padding: 24px; place-items: center; border: 2px solid #eceef5; border-radius: 18px; box-shadow: 0 5px 0 #e1e3eb; font-size: 24px; font-weight: 700; text-align: center; cursor: pointer; }
+.flashcard.revealed { border-color: #4255ff; background: #eef0ff; }
+.flashcard.correct { border-color: #25a75a; background: #e4f8eb; color: #16763b; }
+.flashcard.incorrect { border-color: #e34b4b; background: #fff0f0; color: #b42323; }
+.definition { min-height: 42px; line-height: 1.5; color: #55596a; }
+.status { min-height: 22px; color: #4255ff; text-align: center; }
+.score { text-align: center; }
+.hidden { display: none; }
+@media (max-width: 600px) { .app { margin: 12px auto; padding: 14px; } .panel { padding: 20px; } }

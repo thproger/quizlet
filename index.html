@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ФКН ім. Євгена Давиденко</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="brand">✦ WordGPT</header>
+    <section class="panel" id="setup">
+      <h1>Час прикласти трошки насилля</h1>
+      <p class="muted">API підбере слова за рівнем і темою та завантажить переклади.</p>
+      <!-- <label for="apiKey">Безкоштовний FreeDict API-ключ</label>
+      <input class="field" id="apiKey" type="password" placeholder="Встав API-ключ"> -->
+      <label for="name">Твоє ім’я</label>
+      <input class="field" id="name" placeholder="Наприклад, Оля">
+      <label for="level">Рівень</label>
+      <select class="field" id="level">
+        <option value="A1">A1</option><option value="A2">A2</option>
+        <option value="B1">B1</option><option value="B2">B2</option>
+        <option value="C1">C1</option><option value="C2">C2</option>
+      </select>
+      <label for="topic">Тема</label>
+      <select class="field" id="topic">
+        <option value="food">Їжа</option><option value="travel">Подорожі</option>
+        <option value="health">Здоров’я</option><option value="nature">Природа</option>
+        <option value="technology">Технології</option><option value="school">Навчання</option>
+      </select>
+      <label for="amount">Кількість нових слів</label>
+      <input class="field" id="amount" type="number" min="1" value="10">
+      <button class="primary" id="start">Завантажити слова</button>
+      <p class="status" id="status"></p>
+    </section>
+
+    <section class="panel hidden" id="study">
+      <div class="topline"><span id="greeting"></span><span id="step"></span></div>
+      <div class="track"><i id="progress"></i></div>
+      <article class="flashcard" id="card" title="Натисни, щоб побачити слово">Завантаження…</article>
+      <p class="definition" id="definition"></p>
+      <input class="field" id="answer" placeholder="Введи англійське слово">
+      <button class="primary" id="check">Перевірити</button>
+      <button class="secondary finish" id="finish">Закінчити заняття</button>
+      <p class="status" id="feedback"></p>
+      <p class="score" id="score"></p>
+      <p class="score" id="unlearned"></p>
+    </section>
+
+  </main>
+</body>
+</html>
